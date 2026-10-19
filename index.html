@@ -12,40 +12,44 @@
         <header>
             <div class="icon">🔬</div>
             <h1>Missão Ciência</h1>
-            <p>Desafie seus conhecimentos científicos!</p>
+            <p>Aprenda, evolua e torne-se um cientista!</p>
         </header>
 
         <section class="painel">
             <div class="info">
-                <span id="progresso">Pergunta 1 de 10</span>
-                <span>⭐ Pontos: <strong id="pontos">0</strong></span>
+                <span id="nivel">🏅 Nível 1</span>
+                <span id="vidas">❤️❤️❤️</span>
+                <span>⭐ <strong id="pontos">0</strong></span>
             </div>
+
+            <p id="progressoNivel">Acertos para o próximo nível: 0/5</p>
 
             <div class="barra">
                 <div id="barraProgresso"></div>
             </div>
 
             <div id="jogo">
-                <span id="categoria">🌎 Ciências</span>
-                <h2 id="pergunta">Carregando pergunta...</h2>
+                <span id="categoria">🔬 Ciências</span>
+                <h2 id="pergunta">Preparando missão...</h2>
                 <div id="opcoes"></div>
                 <p id="feedback" aria-live="polite"></p>
                 <button id="proximo" class="botao" hidden>
-                    Próxima pergunta →
+                    Continuar →
                 </button>
             </div>
 
-            <div id="resultado" hidden>
-                <h2>🏆 Missão concluída!</h2>
-                <p id="mensagemFinal"></p>
-                <div class="nota" id="notaFinal"></div>
+            <div id="fimDeJogo" hidden>
+                <h2>🏆 Fim de jogo!</h2>
+                <p id="resumoFinal"></p>
                 <button class="botao" onclick="reiniciarJogo()">
                     🔄 Jogar novamente
                 </button>
             </div>
         </section>
 
-        <footer>Aprender é uma grande aventura! 🚀</footer>
+        <footer>
+            <p>🚀 Cada pergunta é uma nova descoberta!</p>
+        </footer>
     </main>
 
     <script src="script.js"></script>
