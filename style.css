@@ -6,13 +6,13 @@
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #d9f7ff, #e8e1ff);
-    color: #26334a;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d9f7ff, #e8e1ff);
+    color: #26334a;
 }
 
 .container {
@@ -49,10 +49,26 @@ header p {
 .info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 15px;
+}
+
+#nivel {
+    color: #5144c8;
+}
+
+#vidas {
+    letter-spacing: 2px;
+}
+
+#progressoNivel {
+    color: #6756e8;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
 }
 
 .barra {
@@ -94,6 +110,7 @@ h2 {
     border: 2px solid #e1e4ef;
     border-radius: 12px;
     background: white;
+    color: #26334a;
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s;
@@ -106,6 +123,7 @@ h2 {
 
 .opcao:disabled {
     cursor: default;
+    opacity: 1;
 }
 
 .opcao.correta {
@@ -141,14 +159,6 @@ h2 {
     background: #5141c5;
 }
 
-.nota {
-    font-size: 42px;
-    color: #5144c8;
-    font-weight: bold;
-    text-align: center;
-    margin: 25px;
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -174,5 +184,9 @@ footer {
 
     .info {
         font-size: 12px;
+    }
+
+    .opcao {
+        font-size: 15px;
     }
 }
