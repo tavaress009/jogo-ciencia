@@ -11,8 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #d9f7ff, #e8e1ff);
-    color: #26334a;
+    background: linear-gradient(135deg, #00d2ff, #7b2ff7, #ff4ecd);
+    background-attachment: fixed;
+    color: #202044;
 }
 
 .container {
@@ -26,24 +27,29 @@ header {
 }
 
 .icon {
-    font-size: 55px;
+    font-size: 65px;
+    filter: drop-shadow(0 5px 5px #35208040);
 }
 
 h1 {
-    color: #5144c8;
+    color: #ffffff;
     margin: 10px 0;
-    font-size: 36px;
+    font-size: 40px;
+    text-shadow: 0 4px 12px #35208060;
 }
 
 header p {
-    color: #596579;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 2px 5px #35208060;
 }
 
 .painel {
-    background: white;
+    background: #ffffff;
     padding: 28px;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px #30305020;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px #25105b50;
 }
 
 .info {
@@ -57,23 +63,30 @@ header p {
 }
 
 #nivel {
-    color: #5144c8;
+    color: #7138e8;
+    background: #eee5ff;
+    padding: 8px 10px;
+    border-radius: 12px;
 }
 
 #vidas {
     letter-spacing: 2px;
 }
 
+#pontos {
+    color: #ff8c00;
+}
+
 #progressoNivel {
-    color: #6756e8;
+    color: #7138e8;
     font-size: 14px;
     font-weight: bold;
     margin: 15px 0;
 }
 
 .barra {
-    height: 10px;
-    background: #e8e8f5;
+    height: 12px;
+    background: #e8e2ff;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 25px;
@@ -82,21 +95,23 @@ header p {
 #barraProgresso {
     width: 0%;
     height: 100%;
-    background: #6756e8;
+    background: linear-gradient(90deg, #00d68f, #00c2ff, #8b5cf6);
+    border-radius: 20px;
     transition: width 0.3s;
 }
 
 #categoria {
     display: inline-block;
-    background: #eeeaff;
-    color: #5144c8;
-    padding: 8px 12px;
+    background: #dff8ff;
+    color: #0077b6;
+    padding: 9px 13px;
     border-radius: 20px;
     font-size: 13px;
     font-weight: bold;
 }
 
 h2 {
+    color: #392078;
     font-size: 23px;
     line-height: 1.4;
 }
@@ -107,18 +122,20 @@ h2 {
     text-align: left;
     padding: 15px;
     margin: 12px 0;
-    border: 2px solid #e1e4ef;
-    border-radius: 12px;
-    background: white;
-    color: #26334a;
+    border: 2px solid #d9d5ff;
+    border-radius: 14px;
+    background: #f8f6ff;
+    color: #29204f;
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .opcao:hover:not(:disabled) {
-    border-color: #6756e8;
-    background: #f6f4ff;
+    border-color: #753cff;
+    background: #eee6ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px #753cff20;
 }
 
 .opcao:disabled {
@@ -127,42 +144,52 @@ h2 {
 }
 
 .opcao.correta {
-    border-color: #20a464;
-    background: #e1f8eb;
+    border-color: #00b96b;
+    background: #c9ffe4;
+    color: #075b37;
+    font-weight: bold;
 }
 
 .opcao.errada {
-    border-color: #e05252;
-    background: #ffebeb;
+    border-color: #ff4d67;
+    background: #ffe0e6;
+    color: #a31836;
 }
 
 #feedback {
     font-weight: bold;
     min-height: 24px;
     line-height: 1.5;
+    color: #4c329e;
 }
 
 .botao {
     width: 100%;
     border: none;
-    border-radius: 12px;
-    padding: 15px;
-    background: #6756e8;
+    border-radius: 14px;
+    padding: 16px;
+    background: linear-gradient(90deg, #7138e8, #a52cff);
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
+    box-shadow: 0 5px 12px #7138e840;
+    transition: 0.2s;
 }
 
 .botao:hover {
-    background: #5141c5;
+    background: linear-gradient(90deg, #5420c9, #8315e8);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px #7138e850;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    color: #596579;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 2px 5px #35208060;
 }
 
 [hidden] {
@@ -171,7 +198,7 @@ footer {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .painel {
