@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Ciência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <div class="icon">🔬</div>
+            <h1>Missão Ciência</h1>
+            <p>Desafie seus conhecimentos científicos!</p>
+        </header>
+
+        <section class="painel">
+            <div class="info">
+                <span id="progresso">Pergunta 1 de 10</span>
+                <span>⭐ Pontos: <strong id="pontos">0</strong></span>
+            </div>
+
+            <div class="barra">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <div id="jogo">
+                <span id="categoria">🌎 Ciências</span>
+                <h2 id="pergunta">Carregando pergunta...</h2>
+                <div id="opcoes"></div>
+                <p id="feedback" aria-live="polite"></p>
+                <button id="proximo" class="botao" hidden>
+                    Próxima pergunta →
+                </button>
+            </div>
+
+            <div id="resultado" hidden>
+                <h2>🏆 Missão concluída!</h2>
+                <p id="mensagemFinal"></p>
+                <div class="nota" id="notaFinal"></div>
+                <button class="botao" onclick="reiniciarJogo()">
+                    🔄 Jogar novamente
+                </button>
+            </div>
+        </section>
+
+        <footer>Aprender é uma grande aventura! 🚀</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
